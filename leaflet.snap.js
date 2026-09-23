@@ -272,8 +272,6 @@ L.Handler.MarkerSnap = L.Handler.extend({
 
         if (marker) {
             // new markers should be draggable !
-            if (!marker.dragging) marker.dragging = new L.Handler.MarkerDrag(marker);
-            marker.dragging.enable();
             this.watchMarker(marker);
         }
 
